@@ -59,3 +59,15 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+;; Navigation
+(global-set-key (kbd "M-l") 'forward-char)
+(global-set-key (kbd "M-j") 'backward-char)
+(global-set-key (kbd "M-k") 'next-line)
+(global-set-key (kbd "M-i") 'previous-line)
+
+(global-set-key (kbd "M-J") 'back-to-indentation)
+(global-set-key (kbd "M-L") 'move-end-of-line)
+
+(global-set-key (kbd "M-u") 'paredit-backward-delete)
+(global-set-key (kbd "M-o") 'paredit-forward-delete)
